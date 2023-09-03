@@ -6,6 +6,12 @@ if [[ $EUID -ne 0 ]]; then
 	exit 1
 fi
 
+# Username has to be given as an argument
+if [[ $# -lt 1 ]]; then
+    echo "The first argument passed to the scipt should be you username."
+fi
+username=$1
+
 
 # Intro
 echo "Install script for my hyprland setup on arch."
@@ -23,7 +29,7 @@ pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 chmod 777 yay-bin
 cd yay-bin
-sudo -u $(whoami) makepkg -si
+sudo -u $username makepkg -si
 
 # Update system with yay
 yay
@@ -50,7 +56,7 @@ yay -S \
 	sl
 
 # These have to be installed without sudo
-sudo -u $(whoami) yay -S \
+sudo -u $username yay -S \
  	c-lolcat \
  	sddm-theme-corners-git \
  	swww hyprshot swaylock-effects \
