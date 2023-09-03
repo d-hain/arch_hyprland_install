@@ -2,20 +2,21 @@
 
 ## Archinstall selections
 
-Language:              English
-Locales:               Keyboard Layout: de
-Disk config:           btrfs, subvolumes, compression
-Bootloader:            Grub
-Swap:                  True
-User account:          dhain
-Profile:               Minimal
-Audio:                 Pipewire
-Additional packages:   
+**Language**:              English \
+**Locales**:               Keyboard Layout: de \
+**Disk config**:           btrfs, subvolumes, compression \
+**Bootloader**:            Grub \
+**Swap**:                  True \
+**User account**:          dhain \
+**Profile**:               Minimal \
+**Audio**:                 Pipewire \
+**Additional packages**:
 - git
 - base-devel
-Network config:        Use NetworkManager
-Timezone:              CEST
-NTP:                   True
+
+**Network config**:        Use NetworkManager \
+**Timezone**:              CEST \
+**NTP**:                   True
 
 
 ## Packages (exluding archinstall extra packages)
@@ -33,6 +34,7 @@ NTP:                   True
 - bat (cat but beautiful)
 - ripgrep (grep but better)
 - brightnessctl (screen brightness utility)
+- bluez (bluetooth utility)
 - swww (wallpapers (including gifs))
 - waybar (sidebar/taskbar)
 - synology-drive (Synology Drive Client)
@@ -49,8 +51,6 @@ NTP:                   True
 - ttf-jetbrains-mono (best font)
 - ttf-jetbrains-mono-nerd (best font with icons)
 - sl (ls)
-
-==TODO: ich brauche was für bluetooth (bluez oder so)==
 
 
 ## Installing
