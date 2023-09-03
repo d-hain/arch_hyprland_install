@@ -21,6 +21,8 @@
 
 ## Packages (exluding archinstall extra packages)
 
+- hyprland (window manager)
+- xdg-desktop-portal-hyprland (xdg desktop portal for hyprland)
 - zsh (shell)
 - alacritty (terminal)
 - neofetch (most important util)
@@ -47,6 +49,12 @@
 - pinta (gimp but less features)
 - p3x-onenote-bin (one note)
 - teams (ms teams)
+- swaylock (screen locker)
+- wofi (app searcher)
+- wlogout (logout/restart/shutdown utility)
+- discord
+- nautilus (file explorer)
+- obsidian (note taking)
 - pavucontrol (sound)
 - ttf-jetbrains-mono (best font)
 - ttf-jetbrains-mono-nerd (best font with icons)
@@ -80,10 +88,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```shell
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
-
-### Rust
-
-Install using the instructions from [their website](https://www.rust-lang.org/tools/install).
 
 
 ## Things to configure
