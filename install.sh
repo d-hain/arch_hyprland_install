@@ -38,7 +38,7 @@ yay -S \
 	sddm sddm-theme-corners-git \
 	neofetch imv \
 	exa btop bat ripgrep \
-	brightnessctl pavucontrol \
+	brightnessctl pavucontrol bluez \
 	waybar \
 	swww hyprshot \
 	synology-drive \
