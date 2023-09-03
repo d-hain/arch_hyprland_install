@@ -8,7 +8,7 @@
 **Bootloader**:            Grub \
 **Swap**:                  True \
 **User account**:          dhain \
-**Profile**:               Minimal \
+**Profile**:               None \
 **Audio**:                 Pipewire \
 **Additional packages**:
 - git
