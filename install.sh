@@ -63,7 +63,7 @@ sudo -u $username yay -S \
  	jetbrains-toolbox postman-bin balena-etcher \
  	brave-bin \
  	synology-drive \
- 	p3x-onenote-bin teams \
+ 	p3x-onenote-appimage teams \
  	oh-my-zsh-git
 
 # Installing ohmyzsh plugins
@@ -96,3 +96,12 @@ mv ./dotfiles/.zshrc ~/
 mv ./dotfiles/.zsh_profile ~/
 
 source ~/.zshrc
+
+
+# Enabling startup things
+systemctl enable sddm.service
+
+
+# Sexy ending
+clear
+neofetch
