@@ -23,6 +23,8 @@ echo "- Find me on github: https://github.com/d-hain"
 echo "- hyprland: https://hyprland.org"
 echo "- arch linux: https://archlinux.org"
 echo
+echo "Press any button to install..."
+read _button
 
 
 # Installing yay
@@ -67,8 +69,6 @@ yay -S \
  	p3x-onenote-bin teams \
  	oh-my-zsh-git
 
-zsh
-
 # Installing ohmyzsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
@@ -104,8 +104,6 @@ sudo mv $workdir/dotfiles/.config/wofi        $homedir/.config/wofi
 sudo mv $workdir/dotfiles/.vimrc              $homedir/
 sudo mv $workdir/dotfiles/.zshrc              $homedir/
 sudo mv $workdir/dotfiles/.zsh_profile        $homedir/
-
-source $homedir/.zshrc
 
 
 # Enabling startup things
