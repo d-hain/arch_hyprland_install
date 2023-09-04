@@ -42,15 +42,15 @@ yay -S \
 	zsh alacritty \
 	vim neovim \
 	hyprland xdg-desktop-portal-hyprland \
-	docker \
+	docker postman-bin jetbrains-toolbox balena-etcher \
 	virt-manager \
 	sddm \
 	neofetch imv \
 	exa btop bat ripgrep \
 	brightnessctl pavucontrol bluez \
-	waybar wofi wlogout \
+	waybar wofi \
 	discord \
-	nautilus filezilla \
+	nautilus filezilla libreoffice-still \
 	pinta \
 	ttf-jetbrains-mono ttf-jetbrains-mono-nerd \
 	sl
@@ -59,13 +59,11 @@ yay -S \
 sudo -u $username yay -S \
  	c-lolcat \
  	sddm-theme-corners-git \
- 	swww hyprshot swaylock-effects \
+ 	swww hyprshot swaylock-effects wlogout \
  	brave-bin \
  	synology-drive \
- 	p3x-onenote-bin teams
-
-# Installing ohmyzsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+ 	p3x-onenote-bin teams \
+ 	oh-my-zsh-git
 
 # Installing ohmyzsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
