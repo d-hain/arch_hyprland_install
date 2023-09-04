@@ -8,7 +8,8 @@ fi
 
 # Username has to be given as an argument
 if [[ $# -lt 1 ]]; then
-    echo "The first argument passed to the scipt should be you username."
+    echo "The first argument passed to the scipt should be your username."
+    exit 1
 fi
 username=$1
 
@@ -35,14 +36,14 @@ sudo -u $username makepkg -si
 yay
 
 # Installing Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Installing all packages
 yay -S \
 	zsh alacritty \
 	vim neovim \
 	hyprland xdg-desktop-portal-hyprland \
-	docker postman-bin jetbrains-toolbox balena-etcher \
+	docker \
 	virt-manager \
 	sddm \
 	neofetch imv \
@@ -60,6 +61,7 @@ sudo -u $username yay -S \
  	c-lolcat \
  	sddm-theme-corners-git \
  	swww hyprshot swaylock-effects wlogout \
+ 	jetbrains-toolbox postman-bin balena-etcher \
  	brave-bin \
  	synology-drive \
  	p3x-onenote-bin teams \
