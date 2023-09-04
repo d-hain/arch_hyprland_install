@@ -35,11 +35,10 @@ sudo -u $username makepkg -si
 # Update system with yay
 yay
 
-# Installing Rust
-# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Installing all packages
 yay -S \
+	rustup \
 	zsh alacritty \
 	vim neovim \
 	hyprland xdg-desktop-portal-hyprland \
