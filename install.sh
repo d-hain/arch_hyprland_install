@@ -70,8 +70,11 @@ yay -S \
 zsh
 
 # Installing ohmyzsh plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
+
+# Installing packer (nvim package manager)
+git clone --depth 1 https://github.com/wbthomason/packer.nvim $homedir/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 
 # Configure git
@@ -81,6 +84,8 @@ read conf_git
 if [[ $conf_git -eq "y" ]]; then
 	git config --global user.name "David Hain"
 	git config --global user.email "d.hain@gmx.at"
+
+	echo "git config done."
 fi
 
 
