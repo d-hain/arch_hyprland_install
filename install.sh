@@ -1,8 +1,8 @@
 #! /bin/sh
 
-# Check for sudo privileges
-if [[ $EUID -ne 0 ]]; then
-	echo "Please run as root."
+# Do not run this script using sudo
+if [[ $EUID -eq 0 ]]; then
+	echo "Please do not run using sudo!"
 	exit 1
 fi
 
@@ -23,7 +23,6 @@ echo "- Find me on github: https://github.com/d-hain"
 echo "- hyprland: https://hyprland.org"
 echo "- arch linux: https://archlinux.org"
 echo
-echo
 
 
 # Installing yay
@@ -31,7 +30,7 @@ pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 chmod 777 yay-bin
 cd yay-bin
-sudo -u $username makepkg -si
+makepkg -si
 cd ..
 
 # Update system with yay
@@ -58,7 +57,7 @@ yay -S \
 	sl
 
 # These have to be installed without sudo
-sudo -u $username yay -S \
+yay -S \
  	c-lolcat \
  	sddm-theme-corners-git \
  	swww hyprshot swaylock-effects wlogout \
@@ -67,6 +66,8 @@ sudo -u $username yay -S \
  	synology-drive \
  	p3x-onenote-bin teams \
  	oh-my-zsh-git
+
+zsh
 
 # Installing ohmyzsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -89,15 +90,15 @@ git clone --recurse-submodules https://github.com/d-hain/dotfiles
 workdir=$(pwd)
 
 # .config
-mv $workdir/dotfiles/.config/alacritty $homedir/.config/alacritty
-mv $workdir/dotfiles/.config/hypr $homedir/.config/hypr
-mv $workdir/dotfiles/.config/nvim $homedir/.config/nvim
-mv $workdir/dotfiles/.config/swaylock $homedir/.config/swaylock
-mv $workdir/dotfiles/.config/wofi $homedir/.config/wofi
+sudo mv $workdir/dotfiles/.config/alacritty   $homedir/.config/alacritty
+sudo mv $workdir/dotfiles/.config/hypr        $homedir/.config/hypr
+sudo mv $workdir/dotfiles/.config/nvim        $homedir/.config/nvim
+sudo mv $workdir/dotfiles/.config/swaylock    $homedir/.config/swaylock
+sudo mv $workdir/dotfiles/.config/wofi        $homedir/.config/wofi
 
-mv $workdir/dotfiles/.vimrc $homedir/
-mv $workdir/dotfiles/.zshrc $homedir/
-mv $workdir/dotfiles/.zsh_profile $homedir/
+sudo mv $workdir/dotfiles/.vimrc              $homedir/
+sudo mv $workdir/dotfiles/.zshrc              $homedir/
+sudo mv $workdir/dotfiles/.zsh_profile        $homedir/
 
 source $homedir/.zshrc
 
