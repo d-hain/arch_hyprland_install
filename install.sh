@@ -60,10 +60,10 @@ sudo -u $username yay -S \
  	c-lolcat \
  	sddm-theme-corners-git \
  	swww hyprshot swaylock-effects wlogout \
- 	jetbrains-toolbox postman-bin balena-etcher \
+ 	jetbrains-toolbox postman-bin \
  	brave-bin \
  	synology-drive \
- 	p3x-onenote-appimage teams \
+ 	p3x-onenote-bin teams \
  	oh-my-zsh-git
 
 # Installing ohmyzsh plugins
