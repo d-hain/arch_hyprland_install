@@ -19,7 +19,8 @@
 **NTP**:                   True
 
 
-## Packages (exluding archinstall extra packages)
+## Packages
+==This list is already outdated and for the actual ones just look into the install script.==
 
 - hyprland (window manager)
 - xdg-desktop-portal-hyprland (xdg desktop portal for hyprland)
