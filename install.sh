@@ -12,6 +12,7 @@ if [[ $# -lt 1 ]]; then
     exit 1
 fi
 username=$1
+homedir=/home/$username
 
 
 # Intro
@@ -31,6 +32,7 @@ git clone https://aur.archlinux.org/yay-bin.git
 chmod 777 yay-bin
 cd yay-bin
 sudo -u $username makepkg -si
+cd ..
 
 # Update system with yay
 yay
@@ -84,18 +86,20 @@ fi
 # Copying config files from https://github.com/d-hain/dotfiles
 git clone --recurse-submodules https://github.com/d-hain/dotfiles
 
+workdir=$(pwd)
+
 # .config
-mv ./dotfiles/.config/alacritty ~/.config/alacritty
-mv ./dotfiles/.config/hypr ~/.config/hypr
-mv ./dotfiles/.config/nvim ~/.config/nvim
-mv ./dotfiles/.config/swaylock ~/.config/swaylock
-mv ./dotfiles/.config/wofi ~/.config/wofi
+mv $workdir/dotfiles/.config/alacritty $homedir/.config/alacritty
+mv $workdir/dotfiles/.config/hypr $homedir/.config/hypr
+mv $workdir/dotfiles/.config/nvim $homedir/.config/nvim
+mv $workdir/dotfiles/.config/swaylock $homedir/.config/swaylock
+mv $workdir/dotfiles/.config/wofi $homedir/.config/wofi
 
-mv ./dotfiles/.vimrc ~/
-mv ./dotfiles/.zshrc ~/
-mv ./dotfiles/.zsh_profile ~/
+mv $workdir/dotfiles/.vimrc $homedir/
+mv $workdir/dotfiles/.zshrc $homedir/
+mv $workdir/dotfiles/.zsh_profile $homedir/
 
-source ~/.zshrc
+source $homedir/.zshrc
 
 
 # Enabling startup things
