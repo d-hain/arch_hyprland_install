@@ -3,7 +3,7 @@
 ## Archinstall selections
 
 **Language**:              English \
-**Locales**:               Keyboard Layout: de \
+**Locales**:               **Keyboard Layout**: de \
 **Disk config**:           btrfs, subvolumes, compression \
 **Bootloader**:            Grub \
 **Swap**:                  True \
