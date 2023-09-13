@@ -61,13 +61,20 @@ yay -S \
 # These have to be installed without sudo
 yay -S \
  	c-lolcat \
- 	sddm-theme-corners-git \
  	swww hyprshot swaylock-effects wlogout \
  	jetbrains-toolbox postman-bin \
  	brave-bin \
  	synology-drive \
  	p3x-onenote-bin teams \
  	oh-my-zsh-git
+
+# Catpuccin SDDM Theme
+# Dependencies
+yay -S qt5-graphicaleffects qt5-svg qt5-quickcontrols2
+
+git clone https://github.com/catpuccin/sddm
+sudo cp -r src/catpuccin-macchiato /usr/share/sddm/themes/
+sudo echo "[Theme]\nCurrent=catpuccin-macchiato\n" > /etc/sddm.conf
 
 # Installing ohmyzsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM}/plugins/zsh-autosuggestions

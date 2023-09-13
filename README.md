@@ -67,35 +67,3 @@
 1. Download archiso, boot into the live environment and install arch. I'll be using archinstall.
 1. Clone this repo and run the shell script. (aur helper will be yay)
 
-
-## Other things to install
-
-### ohmyzsh
-
-```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-#### Plugins
-
-##### zsh-autosuggestions
-
-```shell
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-
-##### zsh-syntax-highlighting
-
-```shell
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-
-
-## Things to configure
-
-### Git config
-
-```shell
-git config --global user.name "David Hain"
-git config --global user.email "d.hain@gmx.at"
-```
