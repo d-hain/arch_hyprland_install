@@ -55,7 +55,7 @@ yay -S \
 	discord \
 	nautilus filezilla libreoffice-still \
 	pinta \
-	ttf-jetbrains-mono ttf-jetbrains-mono-nerd \
+	ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-font-awesome \
 	sl
 
 # These have to be installed without sudo
