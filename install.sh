@@ -28,7 +28,7 @@ read _button
 
 
 # Installing yay
-pacman -S --needed git base-devel
+sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 chmod 777 yay-bin
 cd yay-bin
