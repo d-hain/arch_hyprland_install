@@ -77,8 +77,9 @@ sudo cp -r src/catpuccin-macchiato /usr/share/sddm/themes/
 sudo echo "[Theme]\nCurrent=catpuccin-macchiato\n" > /etc/sddm.conf
 
 # Installing ohmyzsh plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
+zshcustom=/usr/share/oh-my-zsh/custom   # arch package (Default: $HOME/.oh-my-zsh)
+git clone https://github.com/zsh-users/zsh-autosuggestions $zshcustom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting $zshcustom/plugins/zsh-syntax-highlighting
 
 # Installing packer (nvim package manager)
 git clone --depth 1 https://github.com/wbthomason/packer.nvim $homedir/.local/share/nvim/site/pack/packer/start/packer.nvim
