@@ -108,8 +108,10 @@ sudo mv $workdir/dotfiles/.config/hypr        $homedir/.config/hypr
 sudo mv $workdir/dotfiles/.config/nvim        $homedir/.config/nvim
 sudo mv $workdir/dotfiles/.config/swaylock    $homedir/.config/swaylock
 sudo mv $workdir/dotfiles/.config/wofi        $homedir/.config/wofi
+sudo mv $workdir/dotfiles/.config/wlogout     $homedir/.config/wlogout
 
 sudo mv $workdir/dotfiles/.vimrc              $homedir/
+sudo mv $workdir/dotfiles/.ideavimrc          $homedir/
 sudo mv $workdir/dotfiles/.zshrc              $homedir/
 sudo mv $workdir/dotfiles/.zsh_profile        $homedir/
 
