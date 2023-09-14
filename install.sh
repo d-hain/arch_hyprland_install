@@ -50,7 +50,7 @@ yay -S \
 	sddm \
 	neofetch imv \
 	exa btop bat ripgrep \
-	brightnessctl pavucontrol bluez \
+	brightnessctl pavucontrol bluez pamixer \
 	waybar wofi \
 	discord \
 	nautilus filezilla libreoffice-still \
