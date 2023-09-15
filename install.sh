@@ -45,7 +45,7 @@ yay -S \
 	zsh alacritty \
 	vim neovim \
 	hyprland xdg-desktop-portal-hyprland \
-	docker \
+	docker docker-compose \
 	virt-manager \
 	sddm \
 	neofetch imv \
