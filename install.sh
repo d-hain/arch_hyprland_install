@@ -68,13 +68,13 @@ yay -S \
  	p3x-onenote-bin teams \
  	oh-my-zsh-git
 
+# NOTE: Does not work because you need to log into git
 # Catpuccin SDDM Theme
 # Dependencies
-yay -S qt5-graphicaleffects qt5-svg qt5-quickcontrols2
-
-git clone https://github.com/catpuccin/sddm
-sudo cp -r src/catpuccin-macchiato /usr/share/sddm/themes/
-sudo echo "[Theme]\nCurrent=catpuccin-macchiato\n" > /etc/sddm.conf
+# yay -S qt5-graphicaleffects qt5-svg qt5-quickcontrols2
+# git clone https://github.com/catpuccin/sddm
+# sudo cp -r src/catpuccin-macchiato /usr/share/sddm/themes/
+# sudo echo "[Theme]\nCurrent=catpuccin-macchiato\n" > /etc/sddm.conf
 
 # Installing ohmyzsh plugins
 zshcustom=/usr/share/oh-my-zsh/custom   # arch package (Default: $HOME/.oh-my-zsh)
