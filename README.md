@@ -1,5 +1,7 @@
 # Arch install with Hyprland
 
+# VERY OUTDATED - DOES NOT WORK AT ALL
+
 ## Archinstall selections
 
 **Language**:              English \
